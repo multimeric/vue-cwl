@@ -76,6 +76,10 @@
                 this.cwlState = this.cwl;
             },
 
+            workflow(){
+                this.$emit('workflow-changed', this.workflow)
+            },
+
             cwlState(){
                 this.workflow = new Workflow({
                     editingEnabled: this.editingEnabled,
