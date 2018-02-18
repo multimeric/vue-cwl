@@ -95,21 +95,28 @@
 
                 // Emit a selectionChanged event when selection changes
                 const selection = this.workflow.getPlugin(SelectionPlugin);
-                selection.registerOnSelectionChange(element => {
-                    if (element) {
-                        const id = element.getAttribute("data-connection-id");
-                        const selected = this.workflow.model.findById(id);
-                        this.$emit('selection-changed', selected);
-                    }
-                });
+                if (selection){
+                    selection.registerOnSelectionChange(element => {
+                        if (element) {
+                            const id = element.getAttribute("data-connection-id");
+                            const selected = this.workflow.model.findById(id);
+                            this.$emit('selection-changed', selected);
+                        }
+                    });
+                }
             }
         }
     }
+
+
+
+
+
 </script>
 
 <style lang="css">
     .cwl-workflow {
-        height: 500px;
-        position: relative;
+        height: 100%;
+        width: 100%;
     }
 </style>

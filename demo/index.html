@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<div id="vue" class="container container-fluid">
+<div id="vue" style="width: 800px; height: 800px">
     <cwl
             cwl-url="https://rawgit.com/rabix/cwl-svg/master/cwl-samples/fastqc.json"
     ></cwl>
@@ -14,7 +14,7 @@
     new Vue({
         el: '#vue',
         components: {
-            cwl: vue_cwl
+            cwl: vue_cwl.default
         }
     })
 </script>
