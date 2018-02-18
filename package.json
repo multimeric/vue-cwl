@@ -1,6 +1,6 @@
 {
   "name": "vue-cwl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Visualizer of CWL (Common Workflow Language) workflows for Vue",
   "main": "dist/index.js",
   "scripts": {
