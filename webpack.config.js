@@ -8,8 +8,14 @@ module.exports = {
 
     // Output everything into the static folder
     output: {
+        libraryTarget: "umd",
         path: path.resolve("dist/"),
-        filename: "index.js"
+        filename: "index.js",
+        library: 'vue_cwl'
+    },
+
+    externals: {
+        vue: 'vue'
     },
 
     module: {
@@ -56,8 +62,8 @@ module.exports = {
     resolve: {
         extensions: [".ts", ".js", ".vue"],
         alias: {
-            vue: 'vue/dist/vue.esm.js'
-        }
+            'vue$': 'vue/dist/vue.esm.js'
+        },
     }
 };
 

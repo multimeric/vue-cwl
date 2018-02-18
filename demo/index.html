@@ -3,11 +3,20 @@
 <body>
 <div id="vue" class="container container-fluid">
     <cwl
-            cwl-url="/pipeline/{{workflow_instance.workflow_accession}}/{{workflow_instance.workflow_version}}"
-            v-bind:plugins="plugins"
+            cwl-url="https://rawgit.com/rabix/cwl-svg/master/cwl-samples/fastqc.json"
     ></cwl>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 <script src="../dist/index.js"></script>
+<script>
+    Vue.config.devtools = true;
+    Vue.config.debug = true;
+    new Vue({
+        el: '#vue',
+        components: {
+            cwl: vue_cwl
+        }
+    })
+</script>
 </body>
 </html>
