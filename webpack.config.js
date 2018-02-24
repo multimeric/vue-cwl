@@ -11,7 +11,7 @@ module.exports = {
         libraryTarget: "umd",
         path: path.resolve("dist/"),
         filename: "index.js",
-        library: 'vue_cwl'
+        library: 'vueCwl'
     },
 
     externals: {
