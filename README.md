@@ -53,22 +53,22 @@ If using no bundler:
 
 Vue CWL components currently accept 4 props:
 
-* cwl:
-    type: Object
-    default: null
-    description: The JSON object representing the CWL workflow to render
-* cwlUrl:
-    type: String
-    default: null
-    description: A URL to request for the initial CWL object from. Used as an alternative to the "cwl" prop`
-* editingEnabled:
-    type: Boolean
-    default: false
-    description: True if the workflow is editable
-* plugins:
-    type: Array
-    default: No plugins
-    description: A list of CWL plugins to use in the CWL rendering
+* `cwl`:
+    * type: Object
+    * default: null
+    * description: The JSON object representing the CWL workflow to render
+* `cwlUrl`:
+    * type: String
+    * default: null
+    * description: A URL to request for the initial CWL object from. Used as an alternative to the "cwl" prop`
+* `editingEnabled`:
+    * type: Boolean
+    * default: false
+    * description: True if the workflow is editable
+* `plugins`:
+    * type: Array
+    * default: No plugins
+    * description: A list of CWL plugins to use in the CWL rendering
 
 ## Demo
 If you wish to see a working example of Vue CWL, have a look at then demo.
