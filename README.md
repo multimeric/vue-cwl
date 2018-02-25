@@ -71,13 +71,10 @@ Vue CWL components currently accept 4 props:
     * description: A list of CWL plugins to use in the CWL rendering
 
 ## Demo
-If you wish to see a working example of Vue CWL, have a look at then demo.
+An online demo of Vue CWL is available at <https://tmiguelt.github.io/vue-cwl/index.html>
 
-[The source code is available here](demo/index.html)
-
-To run the demo:
-
+If you wish to build the demo yourself:
 * Clone the repo
 * Run `npm run demo`
-* Then browse to <http://localhost:8080/demo/> in your web browser (or whatever URL the command
+* Then browse to <http://localhost:8080/docs/> in your web browser (or whatever URL the command
 prints out)
