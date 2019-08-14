@@ -1,4 +1,7 @@
 # Vue CWL
+
+[![DOI](https://zenodo.org/badge/121595617.svg)](https://zenodo.org/badge/latestdoi/121595617)
+
 Vue CWL provides a Vue component for the visualization of CWL (Common Workflow Language) workflows.
 
 ## Motivation
