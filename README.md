@@ -12,7 +12,7 @@ However, you might want to use Vue CWL because:
 * You can use it directly in your HTML application, without setting up a compiler. You don't even need to use npm!
 * If you're using Vue elsewhere in your application, Vue CWL will be much easier to integrate.
 
-## Installation (if using npm )
+## Installation (if using npm)
 Install from npm:
 
 ```bash
