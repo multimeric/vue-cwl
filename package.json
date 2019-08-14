@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npx rimraf dist/ && npx webpack --mode production",
-    "demo": "npm run prepare && npx http-server docs/"
+    "demo": "npm run prepare && npx http-server docs/",
+    "deploy": "npm run prepare && gh-pages -d docs"
   },
   "repository": {
     "type": "git",
