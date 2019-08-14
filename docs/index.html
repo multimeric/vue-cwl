@@ -3,20 +3,18 @@
 <body>
 <div id="vue" style="width: 800px; height: 800px">
     <cwl
-            cwl-url="https://rawgit.com/rabix/cwl-svg/master/cwl-samples/fastqc.json"
+            cwl-url="https://unpkg.com/cwl-svg@2.1.5/cwl-samples/fastqc.json"
     ></cwl>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-cwl/dist/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="https://unpkg.com/vue-cwl/dist/index.js"></script>
 <script>
-    Vue.config.devtools = true;
-    Vue.config.debug = true;
     new Vue({
         el: '#vue',
         components: {
             cwl: vueCwl.default
         }
-    })
+    });
 </script>
 </body>
 </html>

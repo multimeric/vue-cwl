@@ -1,16 +1,17 @@
-const path = require("path");
+const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-    devtool: "source-map",
+    devtool: 'source-map',
 
     // Read files from js/src
     entry: './cwl.vue',
 
     // Output everything into the static folder
     output: {
-        libraryTarget: "umd",
-        path: path.resolve("dist/"),
-        filename: "index.js",
+        libraryTarget: 'umd',
+        path: path.resolve('dist/'),
+        filename: 'index.js',
         library: 'vueCwl'
     },
 
@@ -36,31 +37,36 @@ module.exports = {
 
             },
             {
-                enforce: "pre",
+                enforce: 'pre',
                 test: /\.ts?$/,
-                exclude: ["node_modules"],
+                exclude: ['node_modules'],
                 use: {
-                    loader: "awesome-typescript-loader",
+                    loader: 'awesome-typescript-loader',
                     options: {
                         useBabel: true
                     }
                 }
             },
-            {test: /\.css$/, loaders: ["style-loader", "css-loader"]},
+            {test: /\.css$/, loaders: ['style-loader', 'css-loader']},
             {
                 test: /\.scss$/,
                 use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
+                    loader: 'style-loader' // creates style nodes from JS strings
                 }, {
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: 'css-loader' // translates CSS into CommonJS
                 }, {
-                    loader: "sass-loader" // compiles Sass to CSS
+                    loader: 'sass-loader' // compiles Sass to CSS
                 }]
             }
         ]
     },
+
+    plugins: [
+        new VueLoaderPlugin()
+    ],
+
     resolve: {
-        extensions: [".ts", ".js", ".vue"],
+        extensions: ['.ts', '.js', '.vue'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
         },

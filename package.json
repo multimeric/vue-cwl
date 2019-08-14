@@ -1,11 +1,11 @@
 {
   "name": "vue-cwl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Visualizer of CWL (Common Workflow Language) workflows for Vue",
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npx rimraf dist/ && npx webpack",
-    "demo": "npm run prepare && npx http-server"
+    "demo": "npm run prepare && npx http-server docs/"
   },
   "repository": {
     "type": "git",
@@ -18,20 +18,20 @@
   },
   "homepage": "https://github.com/TMiguelT/vue-cwl#readme",
   "devDependencies": {
-    "awesome-typescript-loader": "^3.4.1",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.28.9",
-    "cwl-svg": "^2.0.1",
-    "cwlts": "^1.15.19",
+    "awesome-typescript-loader": "^3.5.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
+    "cwl-svg": "^2.1.5",
+    "cwlts": "^1.15.34",
     "http-server": "^0.11.1",
-    "node-sass": "^4.7.2",
-    "rimraf": "^2.6.2",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1",
-    "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.11.0"
+    "node-sass": "^4.12.0",
+    "rimraf": "^2.7.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^3.12.0"
   }
 }
