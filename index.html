@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div id="vue" style="width: 800px; height: 800px">
+    <cwl
+            cwl-url="https://unpkg.com/cwl-svg@2.1.5/cwl-samples/fastqc.json"
+    ></cwl>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="https://unpkg.com/vue-cwl/dist/index.js"></script>
+<script>
+    new Vue({
+        el: '#vue',
+        components: {
+            cwl: vueCwl.default
+        }
+    });
+</script>
+</body>
+</html>
