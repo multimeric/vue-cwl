@@ -1,5 +1,5 @@
 const path = require('path');
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -39,7 +39,7 @@ module.exports = {
             {
                 enforce: 'pre',
                 test: /\.ts?$/,
-                exclude: ['node_modules'],
+                exclude: [/node_modules/],
                 use: {
                     loader: 'awesome-typescript-loader',
                     options: {
@@ -47,7 +47,10 @@ module.exports = {
                     }
                 }
             },
-            {test: /\.css$/, loaders: ['style-loader', 'css-loader']},
+            {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader']
+            },
             {
                 test: /\.scss$/,
                 use: [{
